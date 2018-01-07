@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+{% block form %}
+
+<div class="login-form">
+		<img src="/img/paint.png">
+
+		    <!-- logo -->
+    <div style="
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+    ">Paint<span style="
+        color: red;
+    ">Group</span> </div>
+
+		<h3>Registro de usuarios</h3>
+		<form role="form" action="/registro" method="POST">
+			<div class="form-group">
+				 <label for="exampleInputEmail1">Nombre Completo</label><input type="text" name="nombre" class="form-control" id="exampleInputEmail1">
+			</div>
+			<div class="form-group">
+				 <label for="exampleInputEmail1">Nombre de usuario</label><input type="text" name="usuario" class="form-control" id="exampleInputEmail1">
+			</div>
+			<div class="form-group">
+				 <label for="exampleInputPassword1">Password</label><input type="password" name="pass" class="form-control" id="exampleInputPassword1">
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+		</form>
+
+		</div>
+{% endblock %}

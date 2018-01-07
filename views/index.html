@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+   
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>Examen final nodejs 1</title>
+<!-- BOOTSTRAP CORE STYLE CSS -->
+<link href="/assets/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body style="font-family:Verdana">
+ 
+ <div class="toolbar">
+   <img src="/img/paint.png" style="
+        width: 48px;
+        margin: 4px 16px;
+    ">
+    <!-- logo -->
+    <div style="
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+    ">Paint<span style="
+        color: red;
+    ">Group</span> </div>
+
+    <div style="
+        display: inline-block;
+        float: right;
+        margin: 16px;
+    ">Usuario: {{usuario}}</div>
+
+
+    <ul class="menu-bar">
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/upload">Upload</a></li>
+    </ul>
+ </div>
+
+
+    <div class="row panel">
+
+        {% for img in images %}
+        <div class="thumbnail col-md-3"><a  href="/paint?img={{img}}" target="_blank"><img src="/img/uploads/{{img}}" title="{{img}}" /></a> {{ img }}</div>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+</body>
+</html>

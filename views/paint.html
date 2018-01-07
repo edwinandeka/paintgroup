@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/jquery.min.js"></script>
+   
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>Examen final nodejs 1</title>
+<!-- BOOTSTRAP CORE STYLE CSS -->
+<link href="/assets/css/bootstrap.css" rel="stylesheet" />
+<link href="/css/paint.css" rel="stylesheet" />
+
+</head>
+<body style="font-family:Verdana">
+
+
+
+   <button id="clearCanvas" type="button">Clear</button>
+            
+
+    <div class="image">
+        <canvas id="canvas"></canvas>
+    </div>
+
+
+    <div class="pallete">
+        <div class="pallete-color" id="choosePurple"></div>
+        <div class="pallete-color" id="chooseGreen"></div>
+        <div class="pallete-color" id="chooseYellow"></div>
+        <div class="pallete-color" id="chooseBrown"></div>
+    </div>
+
+
+     <div class="pallete-sizes">
+        <div class="pallete-size" id="chooseSmall"></div>
+        <div class="pallete-size" id="chooseNormal"></div>
+        <div class="pallete-size" id="chooseLarge"></div>
+        <div class="pallete-size" id="chooseHuge"></div>
+    </div>
+
+
+    <script src="/js/paint.js"></script>
+
+</body>
+</html>
