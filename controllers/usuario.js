@@ -22,6 +22,9 @@ var upload = multer({
      storage: Storage
  }).array("imgUploader", 3); //Field name and max count
 
+if (!fs.existsSync( "./public/img/uploads")){
+    fs.mkdirSync( "./public/img/uploads");
+}
 
 
 var UserController = {
